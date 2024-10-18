@@ -45,6 +45,56 @@ h1 {
     width: 300px;
     margin-left: 25px;
     margin-top: 20px;
-    background-color: rgba(146,201,82,255);
+    background-color: rgba(146, 201, 82, 255);
 }
 
+.cards {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(119, 23, 150, 255);
+}
+
+.panel {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(36, 243, 85, 255);
+}
+
+.block {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(211, 39, 118, 255);
+}
+
+.card-body {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(246,107,151,255);
+}
+
+.card-content {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(86,168,194,255);
+}
+
+.text {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+#special {
+    text-align: center;
+    margin-left: 50%;
+}
