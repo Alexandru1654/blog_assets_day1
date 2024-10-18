@@ -4,11 +4,20 @@
     padding: 0;
 }
 
+body {
+    background-image: url(img/cork.png);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
 /*Header section*/
 header {
     background-color: rgba(222, 223, 223, 255);
     width: 100%;
-    height: 120px;
+    height: 150px;
 }
 
 /*Main title*/
@@ -17,6 +26,25 @@ h1 {
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
-    font-size: 80px;
+    vertical-align: middle;
+    font-size: 100px;
+}
+
+/*Card section*/
+.card {
+    height: 400px;
+    width: 350px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(146,201,82,255);
 }
 
