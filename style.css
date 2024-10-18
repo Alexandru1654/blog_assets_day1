@@ -35,62 +35,101 @@ h1 {
     height: 400px;
     width: 350px;
     display: inline-block;
+    margin: 20px;
     margin-top: 50px;
-    margin-left: 30px;
     background-color: white;
+    vertical-align: top;
 }
 
+/*Style for the box inside the card*/
 .box {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
     background-color: rgba(146, 201, 82, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/* Style for cards*/
 .cards {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
     background-color: rgba(119, 23, 150, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/*Style for cards with class panel*/
 .panel {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
     background-color: rgba(36, 243, 85, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/*Style for cards with class block*/
 .block {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
     background-color: rgba(211, 39, 118, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/*Style for cards with class card-body*/
 .card-body {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
-    background-color: rgba(246,107,151,255);
+    background-color: rgba(246, 107, 151, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/*Style for cards with class card-content*/
 .card-content {
     height: 300px;
     width: 300px;
+    font-size: 25px;
     margin-left: 25px;
     margin-top: 20px;
-    background-color: rgba(86,168,194,255);
+    background-color: rgba(86, 168, 194, 255);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
+/*Style for text below cards*/
 .text {
     margin-left: 30px;
     margin-bottom: 15px;
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style: normal
 }
 
+/*Color text-cards*/
+.text-special, .cards, .panel, .block, .card-body, .card-content {
+    color: rgba(156,154,156,255);
+}
 
