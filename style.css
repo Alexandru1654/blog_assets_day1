@@ -32,7 +32,7 @@ h1 {
 
 .card {
     width: 350px;
-    height: 430px;
+    height: 430px; 
     margin-top: 50px;
     padding-top: 20px;
     background-color: white;
@@ -43,9 +43,8 @@ h1 {
 
 .green {
     width: 90%;
-    height: 320px; 
+    height: 340px;
     text-align: center;
-    line-height: 350px;
     line-height: 400px;
     margin: auto;
     background-color: rgba(146,201,82,255);
@@ -59,6 +58,7 @@ h1 {
 .texts {
     margin-left: 30px;
 }
+
 
 
 
