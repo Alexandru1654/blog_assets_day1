@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
+    axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5')
         .then(response => {
             const photos = response.data;
             const main = document.getElementById('photo-container');
@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Errore durante la chiamata all\'API:', error);
         });
 });
-
 
 
 
