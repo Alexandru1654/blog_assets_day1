@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const photos = response.data;
             const main = document.getElementById('photo-container');
 
+            // Iterate on the received photos
             photos.forEach(photo => {
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -12,8 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 imgContainer.className = 'img-container';
 
                 const img = document.createElement('img');
-                img.src = photo.thumbnailUrl; 
+                img.src = photo.thumbnailUrl;
                 img.alt = photo.title;
+
+                // Show overlay on image click
+                img.addEventListener('click', () => {
+                    const overlayImg = document.getElementById('overlay-img');
+                    overlayImg.src = photo.url;
+                    document.getElementById('overlay').style.display = 'flex';
+                });
 
                 imgContainer.appendChild(img);
                 card.appendChild(imgContainer);
@@ -29,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => {
             console.error('Errore durante la chiamata all\'API:', error);
         });
+
+    // Hide overlay on click
+    document.getElementById('close-btn').addEventListener('click', () => {
+        document.getElementById('overlay').style.display = 'none';
+    });
 });
 
 
