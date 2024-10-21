@@ -1,34 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector('.container');
-
+document.addEventListener("DOMContentLoaded", () => {
     axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         .then(response => {
             const photos = response.data;
+            const main = document.getElementById('photo-container');
 
             photos.forEach(photo => {
                 const card = document.createElement('div');
-                card.classList.add('card');
+                card.className = 'card';
 
-                const box = document.createElement('div');
-                box.classList.add('box');
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
 
                 const img = document.createElement('img');
-                img.src = photo.thumbnailUrl;
+                img.src = photo.thumbnailUrl; 
                 img.alt = photo.title;
 
-                const text = document.createElement('span');
-                text.classList.add('text');
-                text.innerText = photo.title;
+                imgContainer.appendChild(img);
+                card.appendChild(imgContainer);
 
-                box.appendChild(img);
-                card.appendChild(box);
-                card.appendChild(text);
-                container.appendChild(card);
+                const title = document.createElement('span');
+                title.className = 'texts';
+                title.innerText = photo.title;
+                card.appendChild(title);
+
+                main.appendChild(card);
             });
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            console.error('Errore durante la chiamata all\'API:', error);
         });
 });
+
+
+
 
 
