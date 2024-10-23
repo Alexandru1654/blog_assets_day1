@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5')
+    axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         .then(response => {
             const photos = response.data;
             const main = document.getElementById('photo-container');

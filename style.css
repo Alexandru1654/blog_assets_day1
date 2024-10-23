@@ -42,6 +42,11 @@ h1 {
     vertical-align: top;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+}
+
 .green {
     width: 90%;
     height: 340px;
@@ -50,7 +55,6 @@ h1 {
     margin: auto;
     background-color: rgba(146, 201, 82, 255);
 }
-
 
 .text {
     font-size: 24px;
